@@ -10,19 +10,13 @@ nav h1{
     margin-top:0;
 }
 
-nav .time {
-    padding-left:60%;
-}
-main{
-    margin:5%;
-    justify-content: center;
-}
-main h1{
+
+.main h1{
     padding-top:5%;
     text-align: center;
     font-size:60px;
 }
-main p{
+.main p{
     padding-top:1%;
     padding-left:5%;
     padding-right:5%;
@@ -37,15 +31,45 @@ color:white;
 margin-left:45%;
 }
 
-#count
-{
-   margin-left:70%;
-   font-size:30px;
-   color:black;
-}
+
 .gameover{
     height:300px;
     width:200px;
     margin:5%;
     background-color: green;
 }
+#questionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f0c29;
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#count
+{
+   margin-left:70%;
+   font-size:30px;
+   color:black;
+}
+#main{
+    margin:5%;
+    justify-content: center;
+}
+.container {
+      padding: 20px;
+      flex-direction: column;
+      width: 50%;
+      margin: auto;
+}
+ .questions {
+    justify-content: center;
+    padding: 210px 20px;
+    margin: auto;
+    height:80%;
+  }

@@ -1,9 +1,12 @@
 // Selects element by class
 var startGame = $('.start');
- var counter = 5;
- var startScreen = $('.main');
+ var counter = 150;
+ var startScreen = $('#main');
  var gameOver = $('#gameOver');
+ var questionDisplay = $('#question');
+ var questionText = $('#questionText')
 
+var Questions = ['What is a tag?','','',]
 
  // timer function
 function startTimer(){
@@ -16,7 +19,7 @@ function startTimer(){
     }
     if (counter === 0) {
         clearInterval(counter);
-        endGame();
+        //endGame();
     }
   }, 1000);
 }
@@ -24,7 +27,10 @@ function startTimer(){
 startGame.on('click', function(){
     startTimer();
     startScreen.hide();
-    //firstQuestion();
+    questionDisplay.show();
+    var firstQuestion = $('<h1>');
+    firstQuestion.text(Questions[0]);
+    questionDisplay.append(firstQuestion);
 
 })
 
